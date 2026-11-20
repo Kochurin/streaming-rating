@@ -1,20 +1,22 @@
 {
   "updated": "2026-11-20",
-  "auto_count": 7,
+  "auto_count": 5,
   "total": 13,
   "services": {
     "yandex-plus": {
       "month": {
         "value": 449,
-        "status": "auto",
+        "status": "stale",
         "checked": "2026-11-20",
-        "source": "https://yandex.ru/support/plus-ru/ru/types"
+        "source": "https://yandex.ru/support/plus-ru/ru/types",
+        "note": "сейчас собрать не удалось, это последнее известное значение"
       },
       "year": {
         "value": 4490,
-        "status": "auto",
+        "status": "stale",
         "checked": "2026-11-20",
-        "source": "https://yandex.ru/support/plus-ru/ru/types"
+        "source": "https://yandex.ru/support/plus-ru/ru/types",
+        "note": "сейчас собрать не удалось, это последнее известное значение"
       },
       "trial": {
         "value": null,
@@ -24,24 +26,28 @@
       },
       "family": {
         "value": "до 4 аккаунтов, 10 устройств",
-        "status": "auto",
+        "status": "stale",
         "checked": "2026-11-20",
-        "source": "https://yandex.ru/support/plus-ru/ru/types"
+        "source": "https://yandex.ru/support/plus-ru/ru/types",
+        "note": "сейчас собрать не удалось, это последнее известное значение"
       },
-      "tariff": "Яндекс Плюс"
+      "tariff": "Яндекс Плюс",
+      "error": "FetchError: HTTP 404"
     },
     "yandex-plus-amedia": {
       "month": {
         "value": 990,
-        "status": "auto",
+        "status": "stale",
         "checked": "2026-11-20",
-        "source": "https://yandex.ru/support/plus-ru/ru/types"
+        "source": "https://yandex.ru/support/plus-ru/ru/types",
+        "note": "сейчас собрать не удалось, это последнее известное значение"
       },
       "year": {
         "value": 5299,
-        "status": "auto",
+        "status": "stale",
         "checked": "2026-11-20",
-        "source": "https://yandex.ru/support/plus-ru/ru/types"
+        "source": "https://yandex.ru/support/plus-ru/ru/types",
+        "note": "сейчас собрать не удалось, это последнее известное значение"
       },
       "trial": {
         "value": null,
@@ -51,9 +57,10 @@
       },
       "family": {
         "value": "до 4 аккаунтов, 10 устройств",
-        "status": "auto",
+        "status": "stale",
         "checked": "2026-11-20",
-        "source": "https://yandex.ru/support/plus-ru/ru/types"
+        "source": "https://yandex.ru/support/plus-ru/ru/types",
+        "note": "сейчас собрать не удалось, это последнее известное значение"
       },
       "tariff": "Плюс с Амедиатекой и START"
     },
