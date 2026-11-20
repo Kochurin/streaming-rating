@@ -1,0 +1,170 @@
+{
+  "_comment": "Справочник сервисов. Сюда пишем только то, что видно на официальных страницах, с датой и ссылкой. Неизвестное оставляем null — на сайте оно покажется как «не проверено». Цены собирает scraper/scrape.py в data/prices.json, блок manual — ручная сверка на случай, когда страница закрыта от скриптов",
+  "services": [
+    {
+      "id": "yandex-plus",
+      "name": "Яндекс Плюс",
+      "tariff": "Яндекс Плюс",
+      "tags": ["kino", "music", "all"],
+      "url": "https://plus.yandex.ru/",
+      "includes": ["Кинопоиск", "Яндекс Музыка", "Яндекс Книги", "Спорт на Кинопоиске"],
+      "includes_source": "https://yandex.ru/support/plus-ru/ru/types",
+      "family": null,
+      "family_source": "https://yandex.ru/support/plus-ru/ru/types",
+      "trial": null
+    },
+    {
+      "id": "yandex-plus-amedia",
+      "name": "Плюс с Амедиатекой и START",
+      "tariff": "Плюс с Амедиатекой и START",
+      "tags": ["kino", "music", "all"],
+      "url": "https://plus.yandex.ru/",
+      "includes": ["Кинопоиск", "Яндекс Музыка", "Яндекс Книги", "Амедиатека", "каталог START на Кинопоиске", "бои Амедиатеки и DAZN"],
+      "includes_source": "https://yandex.ru/support/plus-ru/ru/types",
+      "family": null,
+      "family_source": "https://yandex.ru/support/plus-ru/ru/types",
+      "trial": null,
+      "derived_from": "yandex-plus"
+    },
+    {
+      "id": "ivi",
+      "name": "Иви",
+      "tariff": "Иви",
+      "tags": ["kino"],
+      "url": "https://www.ivi.ru/",
+      "includes": ["фильмы, сериалы и мультфильмы из каталога Иви"],
+      "includes_source": "https://www.ivi.ru/profile/subscriptions",
+      "family": null,
+      "trial": null
+    },
+    {
+      "id": "premier",
+      "name": "PREMIER",
+      "tariff": "PREMIER",
+      "tags": ["kino"],
+      "url": "https://premier.one/",
+      "includes": ["российские сериалы, фильмы и шоу без рекламы"],
+      "includes_source": "https://premier.one/",
+      "family": null,
+      "trial": null
+    },
+    {
+      "id": "wink",
+      "name": "Wink",
+      "tariff": "Wink Всё в одном",
+      "tags": ["kino", "all"],
+      "url": "https://wink.ru/",
+      "includes": ["фильмы и сериалы", "ТВ-каналы", "игры", "спорт"],
+      "includes_source": "https://wink.ru/services",
+      "family": null,
+      "trial": null
+    },
+    {
+      "id": "start",
+      "name": "START",
+      "tariff": "START",
+      "tags": ["kino"],
+      "url": "https://start.ru/",
+      "includes": ["оригинальные сериалы START", "хиты кинопроката", "ТВ-каналы"],
+      "includes_source": "https://start.ru/",
+      "family": null,
+      "trial": null,
+      "manual": {
+        "checked": "2026-11-20",
+        "source": "https://start.ru/",
+        "trial": "7 дней бесплатно"
+      }
+    },
+    {
+      "id": "okko",
+      "name": "Okko",
+      "tariff": "Прайм",
+      "tags": ["kino", "music", "all"],
+      "url": "https://okko.tv/subscriptions",
+      "includes": ["кино и сериалы", "спорт", "музыка", "скидки у партнёров"],
+      "includes_source": "https://okko.tv/subscriptions",
+      "family": null,
+      "trial": null,
+      "manual": {
+        "checked": "2026-11-20",
+        "source": "https://okko.tv/subscriptions",
+        "month": 399,
+        "year": 3990,
+        "trial": "месяц за 1 ₽"
+      }
+    },
+    {
+      "id": "amediateka",
+      "name": "Амедиатека",
+      "tariff": "Amediateka",
+      "tags": ["kino"],
+      "url": "https://www.amediateka.ru/",
+      "includes": ["сериалы и премьеры HBO и других студий"],
+      "includes_source": "https://yandex.ru/support/plus-ru/ru/types",
+      "family": null,
+      "trial": null
+    },
+    {
+      "id": "kion",
+      "name": "КИОН",
+      "tariff": "КИОН",
+      "tags": ["kino"],
+      "url": "https://kion.ru/",
+      "includes": ["фильмы и сериалы КИОН"],
+      "includes_source": "https://kion.ru/",
+      "family": null,
+      "trial": null
+    },
+    {
+      "id": "vk-music",
+      "name": "VK Музыка",
+      "tariff": "VK Музыка на одного",
+      "tags": ["music"],
+      "url": "https://music.vk.com/",
+      "includes": ["музыка без рекламы и офлайн", "аудиокниги", "детский раздел"],
+      "includes_source": "https://music.vk.com/",
+      "family": null,
+      "trial": null,
+      "manual": {
+        "checked": "2026-11-20",
+        "source": "https://music.vk.com/",
+        "month": 199,
+        "year": 1990,
+        "trial": "30 дней бесплатно",
+        "family": "«На четверых»: 299 ₽ в месяц, до 4 участников"
+      }
+    },
+    {
+      "id": "mts-premium",
+      "name": "МТС Premium",
+      "tariff": "МТС Premium",
+      "tags": ["kino", "music", "all"],
+      "url": "https://premium.mts.ru/",
+      "includes": ["кешбэк", "условия связи для абонентов МТС", "кино, музыка и книги — за доплату, состав зависит от тарифа и региона"],
+      "includes_source": "https://premium.mts.ru/",
+      "family": "нет: подписка индивидуальная, участников добавить нельзя",
+      "family_source": "https://premium.mts.ru/",
+      "trial": null
+    },
+    {
+      "id": "sberprime",
+      "name": "СберПрайм",
+      "tariff": "СберПрайм",
+      "tags": ["kino", "music", "all"],
+      "url": "https://sberprime.sber.ru/",
+      "includes": [],
+      "family": null,
+      "trial": null
+    },
+    {
+      "id": "zvuk",
+      "name": "Звук",
+      "tariff": "Звук",
+      "tags": ["music"],
+      "url": "https://zvuk.com/",
+      "includes": [],
+      "family": null,
+      "trial": null
+    }
+  ]
+}

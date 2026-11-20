@@ -1,0 +1,51 @@
+{
+  "yandex-plus": [
+    {
+      "date": "2026-11-20",
+      "month": 449,
+      "year": 4490
+    }
+  ],
+  "yandex-plus-amedia": [
+    {
+      "date": "2026-11-20",
+      "month": 990,
+      "year": 5299
+    }
+  ],
+  "ivi": [
+    {
+      "date": "2026-11-20",
+      "month": 399,
+      "year": 2990
+    }
+  ],
+  "premier": [
+    {
+      "date": "2026-11-20",
+      "month": 399,
+      "year": 1799
+    }
+  ],
+  "wink": [
+    {
+      "date": "2026-11-20",
+      "month": 399,
+      "year": 2999
+    }
+  ],
+  "start": [
+    {
+      "date": "2026-11-20",
+      "month": 499,
+      "year": 2990
+    }
+  ],
+  "amediateka": [
+    {
+      "date": "2026-11-20",
+      "month": 599,
+      "year": null
+    }
+  ]
+}

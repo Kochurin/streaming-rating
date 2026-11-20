@@ -1,0 +1,375 @@
+{
+  "updated": "2026-11-20",
+  "auto_count": 7,
+  "total": 13,
+  "services": {
+    "yandex-plus": {
+      "month": {
+        "value": 449,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://yandex.ru/support/plus-ru/ru/types"
+      },
+      "year": {
+        "value": 4490,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://yandex.ru/support/plus-ru/ru/types"
+      },
+      "trial": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "family": {
+        "value": "до 4 аккаунтов, 10 устройств",
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://yandex.ru/support/plus-ru/ru/types"
+      },
+      "tariff": "Яндекс Плюс"
+    },
+    "yandex-plus-amedia": {
+      "month": {
+        "value": 990,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://yandex.ru/support/plus-ru/ru/types"
+      },
+      "year": {
+        "value": 5299,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://yandex.ru/support/plus-ru/ru/types"
+      },
+      "trial": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "family": {
+        "value": "до 4 аккаунтов, 10 устройств",
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://yandex.ru/support/plus-ru/ru/types"
+      },
+      "tariff": "Плюс с Амедиатекой и START"
+    },
+    "ivi": {
+      "month": {
+        "value": 399,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://www.ivi.ru/profile/subscriptions"
+      },
+      "year": {
+        "value": 2990,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://www.ivi.ru/profile/subscriptions"
+      },
+      "trial": {
+        "value": "30 дней бесплатно",
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://www.ivi.ru/profile/subscriptions"
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "Иви"
+    },
+    "premier": {
+      "month": {
+        "value": 399,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://premier.one/"
+      },
+      "year": {
+        "value": 1799,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://premier.one/"
+      },
+      "trial": {
+        "value": "7 дней за 1 ₽ (в связке PREMIER x RUTUBE)",
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://premier.one/"
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "PREMIER"
+    },
+    "wink": {
+      "month": {
+        "value": 399,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://wink.ru/services"
+      },
+      "year": {
+        "value": 2999,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://wink.ru/services"
+      },
+      "trial": {
+        "value": "3 дня бесплатно",
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://wink.ru/services"
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "Wink Всё в одном",
+      "note": "первый год 1999 ₽"
+    },
+    "start": {
+      "month": {
+        "value": 499,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://start.ru/legal/subscription_price"
+      },
+      "year": {
+        "value": 2990,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://start.ru/legal/subscription_price"
+      },
+      "trial": {
+        "value": "7 дней бесплатно",
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://start.ru/",
+        "note": "сверено вручную"
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "START"
+    },
+    "okko": {
+      "month": {
+        "value": 399,
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://okko.tv/subscriptions",
+        "note": "сверено вручную"
+      },
+      "year": {
+        "value": 3990,
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://okko.tv/subscriptions",
+        "note": "сверено вручную"
+      },
+      "trial": {
+        "value": "месяц за 1 ₽",
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://okko.tv/subscriptions",
+        "note": "сверено вручную"
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "Прайм",
+      "error": "FetchError: страница закрыта антибот-защитой"
+    },
+    "amediateka": {
+      "month": {
+        "value": 599,
+        "status": "auto",
+        "checked": "2026-11-20",
+        "source": "https://apps.apple.com/ru/app/id695094274",
+        "note": "цена встроенной покупки в App Store"
+      },
+      "year": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "trial": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "Amediateka"
+    },
+    "kion": {
+      "month": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "year": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "trial": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "КИОН",
+      "error": "автоматического сбора пока нет: на открытой странице цены нет или она подгружается после входа"
+    },
+    "vk-music": {
+      "month": {
+        "value": 199,
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://music.vk.com/",
+        "note": "сверено вручную"
+      },
+      "year": {
+        "value": 1990,
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://music.vk.com/",
+        "note": "сверено вручную"
+      },
+      "trial": {
+        "value": "30 дней бесплатно",
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://music.vk.com/",
+        "note": "сверено вручную"
+      },
+      "family": {
+        "value": "«На четверых»: 299 ₽ в месяц, до 4 участников",
+        "status": "manual",
+        "checked": "2026-11-20",
+        "source": "https://music.vk.com/",
+        "note": "сверено вручную"
+      },
+      "tariff": "VK Музыка на одного",
+      "error": "автоматического сбора пока нет: на открытой странице цены нет или она подгружается после входа"
+    },
+    "mts-premium": {
+      "month": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "year": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "trial": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "family": {
+        "value": "нет: подписка индивидуальная, участников добавить нельзя",
+        "status": "manual",
+        "checked": null,
+        "source": "https://premium.mts.ru/",
+        "note": "из справочника services.json"
+      },
+      "tariff": "МТС Premium",
+      "error": "автоматического сбора пока нет: на открытой странице цены нет или она подгружается после входа"
+    },
+    "sberprime": {
+      "month": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "year": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "trial": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "СберПрайм",
+      "error": "автоматического сбора пока нет: на открытой странице цены нет или она подгружается после входа"
+    },
+    "zvuk": {
+      "month": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "year": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "trial": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "family": {
+        "value": null,
+        "status": "unverified",
+        "checked": null,
+        "source": null
+      },
+      "tariff": "Звук",
+      "error": "автоматического сбора пока нет: на открытой странице цены нет или она подгружается после входа"
+    }
+  }
+}

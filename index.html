@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сколько стоят стриминги</title>
+<meta name="description" content="Цены российских онлайн-кинотеатров и музыкальных подписок: месяц, год, пробный период, семейный доступ и история цен. Данные собираются с официальных страниц">
+<meta property="og:title" content="Сколько стоят стриминги">
+<meta property="og:description" content="Кинопоиск, Иви, Okko, Wink, START, PREMIER, Амедиатека, VK Музыка и другие: цены с официальных страниц и калькулятор">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23e8590c'/><path d='M12 9l11 7-11 7z' fill='white'/></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>Сколько стоят стриминги</h1>
+    <p class="lead">Онлайн-кинотеатры и музыкальные подписки в России: цена месяца и года, пробный период, семейный доступ и история цен. Цифры берутся с официальных страниц сервисов скриптом, который обновляет их каждый день</p>
+    <p class="meta" id="meta"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="block">
+    <div class="block-head">
+      <h2>Таблица</h2>
+      <div class="chips" id="filters" role="tablist" aria-label="Фильтр">
+        <button class="chip on" data-f="any">Все</button>
+        <button class="chip" data-f="kino">Кино</button>
+        <button class="chip" data-f="music">Музыка</button>
+        <button class="chip" data-f="all">Всё в одном</button>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th data-k="name">Сервис</th>
+            <th data-k="month" class="num">Месяц</th>
+            <th data-k="year" class="num">Год</th>
+            <th data-k="yearMonth" class="num" title="Годовая цена, делённая на 12">Год, в месяц</th>
+            <th data-k="hour" class="num" title="Месячная цена, делённая на часы просмотра из калькулятора">Час просмотра</th>
+            <th data-k="trial">Пробный период</th>
+            <th data-k="family">Семья</th>
+            <th>Что входит</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="legend">
+      <span class="mark auto"></span> собрано скриптом сегодня
+      <span class="mark manual"></span> сверено вручную, дата в подсказке
+      <span class="mark stale"></span> сейчас не собирается, последнее известное
+      <span class="na">не проверено</span> значения нет, выдумывать не стали
+    </p>
+  </section>
+
+  <section class="block" id="calc">
+    <h2>Что дешевле под мои привычки</h2>
+    <div class="calc-grid">
+      <form class="calc-form" id="calcForm" onsubmit="return false">
+        <label class="field">
+          <span>Сколько часов в месяц смотрю фильмы и сериалы</span>
+          <span class="range"><input type="range" id="hours" min="0" max="120" step="2" value="20"><output id="hoursOut">20 ч</output></span>
+        </label>
+        <label class="check"><input type="checkbox" id="needMusic" checked> Нужна музыка без рекламы</label>
+        <label class="check"><input type="checkbox" id="payYear"> Плачу за год сразу</label>
+        <label class="field">
+          <span>Сколько человек будет пользоваться</span>
+          <select id="people">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option>
+          </select>
+        </label>
+        <p class="hint">Считаются только проверенные цены. Где семейный доступ не проверен, считаем отдельную подписку на каждого и пишем об этом</p>
+      </form>
+      <ol class="results" id="results"></ol>
+    </div>
+  </section>
+
+  <section class="block" id="history">
+    <div class="block-head">
+      <h2>История цен</h2>
+      <div class="chips small">
+        <button class="chip on" data-h="month">Месяц</button>
+        <button class="chip" data-h="year">Год</button>
+      </div>
+    </div>
+    <div id="chart" class="chart"></div>
+    <div id="chartLegend" class="chart-legend"></div>
+    <p class="hint" id="chartNote"></p>
+  </section>
+
+  <section class="block about">
+    <h2>Откуда цифры</h2>
+    <ul>
+      <li>Скрипт <code>scraper/scrape.py</code> раз в сутки открывает официальные страницы: справку Яндекс Плюса, витрины Иви, PREMIER и Wink, документ START «Стоимость подписки», карточку Амедиатеки в App Store</li>
+      <li>Если страница закрыта от скриптов или цена видна только после входа, поле получает пометку «не проверено». Последнее известное значение остаётся с датой, но за свежее не выдаётся</li>
+      <li>Okko и VK Музыка сверены вручную в браузере, дата сверки стоит в подсказке. Через 60 дней такие цифры сами становятся непроверенными</li>
+      <li>Цены промо и для новых пользователей в таблицу не попадают, кроме пробного периода. У операторов и в связках бывает дешевле</li>
+    </ul>
+    <p>Нашли ошибку или знаете официальную страницу с ценой — откройте issue в <a href="https://github.com/Kochurin/streaming-rating">репозитории</a></p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Открытый проект, код и данные на <a href="https://github.com/Kochurin/streaming-rating">GitHub</a></span>
+    <span>Что посмотреть сегодня — <a href="https://t.me/filmy_segodnya">@filmy_segodnya</a></span>
+  </div>
+</footer>
+
+<div id="tip" class="tip" hidden></div>
+<script src="data/bundle.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
