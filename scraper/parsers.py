@@ -33,11 +33,28 @@ def plain_text(page: str) -> str:
 YANDEX_URL = "https://yandex.ru/support/plus-ru/ru/types"
 
 
+# Одна и та же справка живёт по нескольким адресам. Из-за границы часть из них отвечает 404
+YANDEX_URLS = [
+    YANDEX_URL,
+    "https://yandex.ru/support/plus/ru/types",
+    "https://yandex.ru/support/plus-other/ru/types",
+]
+
+
 def yandex_plus():
-    page = get(YANDEX_URL)
-    m = re.search(r"<h2[^>]*id=\"tarify\".*?<table>(.*?)</table>", page, re.S)
+    m, errs = None, []
+    for url in YANDEX_URLS:
+        try:
+            page = get(url)
+        except FetchError as e:
+            errs.append(f"{url}: {e}")
+            continue
+        m = re.search(r"<h2[^>]*id=\"tarify\".*?<table>(.*?)</table>", page, re.S)
+        if m:
+            break
+        errs.append(f"{url}: таблица тарифов не найдена")
     if not m:
-        raise ParseError("таблица тарифов не найдена")
+        raise ParseError("; ".join(errs))
     rows = []
     for tr in re.findall(r"<tr>(.*?)</tr>", m.group(1), re.S):
         cells = [plain_text(td).strip() for td in re.findall(r"<td>(.*?)</td>", tr, re.S)]
@@ -53,7 +70,7 @@ def yandex_plus():
         "year": year,
         "tariff": header[1],
         "family": f"до {rub(by['Количество аккаунтов'][1])} аккаунтов, {rub(by['Количество устройств'][1])} устройств",
-        "source": YANDEX_URL,
+        "source": url,
         "variants": [],
     }
     for col in range(2, len(header)):
