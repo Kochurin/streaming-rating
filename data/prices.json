@@ -1,19 +1,19 @@
 {
-  "updated": "2026-11-26",
-  "auto_count": 6,
+  "updated": "2026-11-27",
+  "auto_count": 7,
   "total": 13,
   "services": {
     "yandex-plus": {
       "month": {
         "value": 449,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://yandex.ru/support/plus/ru/types"
       },
       "year": {
         "value": 4490,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://yandex.ru/support/plus/ru/types"
       },
       "trial": {
@@ -25,7 +25,7 @@
       "family": {
         "value": "до 4 аккаунтов, 10 устройств",
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://yandex.ru/support/plus/ru/types"
       },
       "tariff": "Яндекс Плюс"
@@ -34,13 +34,13 @@
       "month": {
         "value": 990,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://yandex.ru/support/plus/ru/types"
       },
       "year": {
         "value": 5299,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://yandex.ru/support/plus/ru/types"
       },
       "trial": {
@@ -52,7 +52,7 @@
       "family": {
         "value": "до 4 аккаунтов, 10 устройств",
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://yandex.ru/support/plus/ru/types"
       },
       "tariff": "Плюс с Амедиатекой и START"
@@ -60,24 +60,21 @@
     "ivi": {
       "month": {
         "value": 399,
-        "status": "stale",
-        "checked": "2026-11-25",
-        "source": "https://www.ivi.ru/profile/subscriptions",
-        "note": "сейчас собрать не удалось, это последнее известное значение"
+        "status": "auto",
+        "checked": "2026-11-27",
+        "source": "https://www.ivi.ru/profile/subscriptions"
       },
       "year": {
         "value": 2990,
-        "status": "stale",
-        "checked": "2026-11-25",
-        "source": "https://www.ivi.ru/profile/subscriptions",
-        "note": "сейчас собрать не удалось, это последнее известное значение"
+        "status": "auto",
+        "checked": "2026-11-27",
+        "source": "https://www.ivi.ru/profile/subscriptions"
       },
       "trial": {
         "value": "30 дней бесплатно",
-        "status": "stale",
-        "checked": "2026-11-25",
-        "source": "https://www.ivi.ru/profile/subscriptions",
-        "note": "сейчас собрать не удалось, это последнее известное значение"
+        "status": "auto",
+        "checked": "2026-11-27",
+        "source": "https://www.ivi.ru/profile/subscriptions"
       },
       "family": {
         "value": null,
@@ -85,26 +82,25 @@
         "checked": null,
         "source": null
       },
-      "tariff": "Иви",
-      "error": "ValueError: invalid literal for int() with base 10: '9.99'"
+      "tariff": "Иви"
     },
     "premier": {
       "month": {
         "value": 399,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://premier.one/"
       },
       "year": {
         "value": 1799,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://premier.one/"
       },
       "trial": {
         "value": "7 дней за 1 ₽ (в связке PREMIER x RUTUBE)",
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://premier.one/"
       },
       "family": {
@@ -119,19 +115,19 @@
       "month": {
         "value": 399,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://wink.ru/services"
       },
       "year": {
         "value": 2999,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://wink.ru/services"
       },
       "trial": {
         "value": "3 дня бесплатно",
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://wink.ru/services"
       },
       "family": {
@@ -147,13 +143,13 @@
       "month": {
         "value": 499,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://start.ru/legal/subscription_price"
       },
       "year": {
         "value": 2990,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://start.ru/legal/subscription_price"
       },
       "trial": {
@@ -206,7 +202,7 @@
       "month": {
         "value": 599,
         "status": "auto",
-        "checked": "2026-11-26",
+        "checked": "2026-11-27",
         "source": "https://apps.apple.com/ru/app/id695094274",
         "note": "цена встроенной покупки в App Store"
       },
